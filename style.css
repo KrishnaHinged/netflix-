@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/0552717c-9d8c-47bd-9640-4f4efa2de663/52e4cd00-9a33-4f8b-afa0-6623070f7654/US-en-20240701-POP_SIGNUP_TWO_WEEKS-perspective_WEB_6392408d-671b-40c8-83c8-888c04ea535d_large.jpg');
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.69;
+    background-color: black;
+}
+
+.nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+
+.nav-logo {
+    width: 9.25rem;
+    height: 2.5rem;
+}
+
+.logo {
+    background-image: url('images/logo.svg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.hero {
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    gap: 16px;
+    padding: 0 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.537);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+input {
+    padding: 1rem 0.75rem 0.75rem;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    color: white;
+    border-radius: 4px;
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+}
+
+/* section  */
+/* first */
+.first {
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding-top: 72px;
+    padding-left: 72px;
+    padding-bottom: 72px;
+
+}
+
+.first-txt {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    text-wrap: balance;
+}
+
+.first-txt h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.first-txt p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.sec-img {
+    position: relative;
+}
+
+.sec-img img {
+    width: 370px;
+    position: relative;
+    z-index: 10;
+}
+
+.sec-img video {
+    left: 13%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 21%;
+}
+
+/* second  */
+/* third  */
+
+.sec-img-3 {
+    position: relative;
+}
+
+.sec-img-3 img {
+    width: 370px;
+    position: relative;
+    z-index: 10;
+}
+
+.sec-img-3 video {
+    left: 19%;
+    overflow: hidden;
+    width: 61%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 4%;
+}
+
+/* faq  */
+.faq {
+    background-color: black;
+    padding: 34px;
+    color: white;
+}
+
+.faq h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.faq-box {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 24px;
+    background-color: #2d2d2d;
+    padding: 30px;
+    max-width: 75vw;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+}
+
+.faq-box:hover {
+    background-color: #414141;
+}
+
+.faq-hero {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+/* footer  */
+footer {
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+
+}
+
+.ques {
+    margin-bottom: 20px;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width:1000px) {
+    .hero h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+    .hero-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .sec-img img {
+        width: 300px;
+    }
+
+    .sec-img video {
+
+        width: 300px;
+    }
+
+    .foot {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .faq h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+
+}
